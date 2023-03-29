@@ -11,6 +11,19 @@ textarea {
   border-left: 1px solid black;
   padding: 10px;
 }
+.container {
+  max-width: 1000px;
+  margin-bottom: 20px;
+}
+
+.jumbotron {   
+  text-align: center;
+  background-color: transparent;
+  color: black;
+  border-radius: 0;
+  border-bottom: 10px solid black;
+  padding-bottom: 30px;
+}
 
 .description {
   white-space: pre-wrap;
