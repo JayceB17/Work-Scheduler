@@ -20,7 +20,7 @@ var hour16 = $("#4:00pm");
 var hour17 = $("#5:00pm");
 
 var everyHour = [hour9, hour10, hour11, hour12, hour13, hour14, hour15, hour16, hour17];
-('#dateTime').text(everyHour);
+$('dateTime').text(dateTime);
 
 function scheduleEvents() {
   var event9 = JSON.parse(localStorage.getItem("9:00 AM"));
@@ -63,9 +63,9 @@ $(document).ready(function(){
   scheduleEvents()
   backgroundColor()
   $(".saveBtn").on("click", function(){
-    userInput = $(this).siblings(".form-control").val().trim();
+    userInput = $(this).siblings(".form-control").val();
     console.log(userInput);
-    hourSpan = $(this).siblings(".input-group-prepend").text().trim();
+    hourSpan = $(this).siblings(".input-group-prepend").text();
     console.log(hourSpan);
     localStorage.setItem(hourSpan, userInput);
     })
