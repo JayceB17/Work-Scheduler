@@ -1,6 +1,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+  background-color: black;
 }
 
 textarea {
@@ -11,6 +12,15 @@ textarea {
   border-left: 1px solid black;
   padding: 10px;
 }
+
+.description {
+  white-space: pre-wrap;
+}
+
+.time-block {
+  border-radius: 15px;
+}
+
 .container {
   max-width: 1000px;
   margin-bottom: 20px;
@@ -25,13 +35,7 @@ textarea {
   padding-bottom: 30px;
 }
 
-.description {
-  white-space: pre-wrap;
-}
 
-.time-block {
-  border-radius: 15px;
-}
 
 .row {
   border-top: 1px solid white;
@@ -44,17 +48,20 @@ textarea {
 }
 
 .past {
-  background-color: #d3d3d3;
+  opacity: 0.5;
+  background-color: rgb(193, 3, 3);
   color: white;
 }
 
 .present {
-  background-color: #ff6961;
+  font-style: bolder;
+  background-color: rgb(41, 156, 2);
   color: white;
 }
 
 .future {
-  background-color: #77dd77;
+  opacity: 0.7;
+  background-color: rgb(255, 196, 0);
   color: white;
 }
 
@@ -69,4 +76,31 @@ textarea {
 .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
+}
+
+#datetime {
+  opacity: 0.5;
+  cursor: crosshair;
+  text-align: center;
+  height: 25px;
+  width: 225px;
+  border-radius: 20px;
+  color: black;
+  background-color: whitesmoke;
+}
+
+.display-3 {
+  color: whitesmoke;
+}
+
+.lead {
+  color: whitesmoke;
+}
+
+.clearBtn {
+  background-color: white;
+}
+
+.clearBtn:hover {
+  background-color: red;
 }
