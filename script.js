@@ -68,5 +68,7 @@ $(document).ready(function(){
     hourSpan = $(this).siblings(".input-group-prepend").text();
     console.log(hourSpan);
     localStorage.setItem(hourSpan, userInput);
+    
     })
+    
 });
